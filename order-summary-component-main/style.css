@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --bright-blue-shadow: hsl(245, 75%, 85%);
+
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+  --white: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background: top / contain no-repeat url(images/pattern-background-desktop.svg) var(--pale-blue);
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  height: 700px;
+  width: 450px;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.card .image {
+  width: 450px;
+  height: 220px;
+  background: top / contain no-repeat url(images/illustration-hero.svg);
+  border-radius: 20px 20px 0 0;
+}
+
+.card .content {
+  padding: 45px 50px 0;
+}
+
+.card .title {
+  color: var(--dark-blue);
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+
+.card .desc {
+  color: var(--desaturated-blue);
+  padding: 15px 0;
+  line-height: 1.5;
+  font-weight: 500;
+  font-size: 1.025rem;
+}
+
+.payment {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--very-pale-blue);
+  padding: 25px 20px;
+  border-radius: 10px;
+}
+
+.card .payment-icon {
+  height: 50px;
+  width: 50px;
+}
+
+.card .plan-info {
+  padding-left: 20px;
+}
+
+.card .plan-type {
+  padding-bottom: 4px;
+  color: var(--dark-blue);
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.card .plan-charges {
+  color: var(--desaturated-blue);
+}
+
+.card .plan-change {
+  margin-top: 10px;
+  margin-left: auto;
+  color: var(--bright-blue);
+  font-weight: 700;
+  font-size: 0.82rem;
+}
+
+.card .payment-btns {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0px;
+}
+
+.card .plan-change a:active {
+  opacity: 0.8;
+  color: var(--bright-blue);
+  text-decoration: none;
+}
+.card .plan-change a:visited {
+  color: var(--bright-blue);
+  opacity: 0.9;
+}
+
+.card .plan-change a:hover {
+  opacity: 0.8;
+  color: var(--bright-blue);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn {
+  font-size: 0.9rem;
+  font-weight: 900;
+  padding: 15px 0px;
+  border-radius: 10px;
+  border: none;
+}
+
+.card .pay-btn {
+  z-index: 1;
+  color: var(--very-pale-blue);
+  background-color: var(--bright-blue);
+  margin-bottom: 20px;
+  box-shadow: 0px 10px 20px var(--bright-blue-shadow);
+}
+.card .pay-btn:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.card .cancel-btn {
+  color: var(--desaturated-blue);
+  background-color: var(--white);
+}
+.card .cancel-btn:hover {
+  color: var(--dark-blue);
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 550px) {
+  body {
+    background: top / contain no-repeat url(images/pattern-background-mobile.svg) var(--pale-blue);
+  }
+
+  .container {
+    height: initial;
+  }
+
+  .card {
+    height: 570px;
+    width: 330px;
+    margin: 10% auto;
+  }
+
+  .card .image {
+    width: 330px;
+    height: 181px;
+    background: top / contain no-repeat url(images/illustration-hero.svg);
+    border-radius: 20px 20px 0 0;
+  }
+
+  .card .content {
+    padding: 35px 26px 0;
+  }
+
+  .card .title {
+    font-size: 1.4rem;
+  }
+
+  .card .desc {
+    padding: 15px 0 20px;
+    font-size: 1rem;
+  }
+
+  .payment {
+    padding: 15px 20px;
+  }
+
+  .card .plan-info {
+    padding-left: 15px;
+  }
+  .card .plan-type {
+    font-size: 0.9rem;
+  }
+  .card .plan-charges {
+    font-size: 0.9rem;
+  }
+
+  .card .plan-change {
+    font-size: 0.75rem;
+  }
+
+  .card .payment-btns {
+    margin: 25px 0 10px;
+  }
+}
