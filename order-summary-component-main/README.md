@@ -22,8 +22,8 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop](design/desktop.png)
-![Mobile](design/mobile.png)
+<img src="design/desktop.png" width="600">
+<img src="design/mobile.png" width="300")
 
 ### Links
 
