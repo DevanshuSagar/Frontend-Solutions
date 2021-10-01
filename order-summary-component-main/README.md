@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- [Live Site URL](https://github.com/DevanshuSagar/Frontend-Solutions/order-summary-component-main/index.html)
+- [Live Site URL](https://github.com/DevanshuSagar/frontend-solutions/order-summary-component-main/index.html)
 
 ## My process
 
